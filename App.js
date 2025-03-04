@@ -49,8 +49,8 @@ export default function App() {
         })
       })
       .catch(err => {
-        if (err.code === "auth/missing-password)") {
-          console.log("A senha  é obrigatória")
+        if (err.code === "auth/missing-password") { // Remova o parêntese extra aqui
+          console.log("A senha é obrigatória")
           return;
         }
         console.log(err.code);
